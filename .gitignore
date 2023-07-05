@@ -1,0 +1,22 @@
+# environment variables
+.env
+
+# virtual environment
+env/
+
+# Byte-compiled / optimized files
+*.pyc
+__pycache__/
+
+# Local development configuration
+instance/
+
+# IDE specific files
+.vscode/
+
+# Docker
+Dockerfile
+requirements.txt
+
+# system files
+.DS_Store

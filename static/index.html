@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trim: Your Personal MP3 Trimmer</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio"></script>
+    <script src="/static/main.js"></script>
+
+    <style>
+        .disabled {
+            pointer-events: none;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mx-auto py-20 flex flex-col items-start max-w-lg p-4">
+
+        <h1 class="font-bold text-2xl">Trim: Your Personal MP3 Trimmer</h1>
+        <p class="text-gray-500">Trim your MP3 files online.</p>
+    
+        <section id="upload-section" class="my-10">
+            <h2 class="font-bold text-lg mb-4">Step 1: Upload MP3 file</h1>
+            <input type="file" id="file-input" class="bg-blue-500 rounded-lg text-white px-4 py-2">
+        </section>
+    
+        <section id="trim-options-section" class="mb-10">
+            <h2 class="font-bold text-lg mb-4">Step 2: Specify Start & End time</h1>
+            <div class="flex flex-col max-w-lg">
+                <label for="start-time" class="text-blue-500 font-bold">Start Time:</label>
+                <input type="text" id="start-time" name="start-time" class="shadow-md bg-white rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500" placeholder="E.g. 00:01:00">
+                
+                <label for="end-time" class="text-blue-500 font-bold mt-4">End Time:</label>
+                <input type="text" id="end-time" name="end-time" class="shadow-md bg-white rounded-lg px-4 py-2 focus:outline-none focus:border-blue-500 mt-2" placeholder="E.g. 00:02:30">
+                
+                <button type="submit" id="trim-button" class="bg-blue-500 text-white rounded-lg px-4 py-2 mt-4 shadow-md">Trim</button>
+            </div>
+        </section>
+    
+    
+        <section id="status-section" class="mb-10">
+            <!-- Status messages will go here -->
+            <!-- <p>Status: Uploading...</p> -->
+        </section>
+    
+        <section id="download-section" class="mb-10">
+            <h2 class="font-bold text-lg mb-4">Step 3: Preview & Download</h1>
+            <div class="bg-gray-200 p-4 rounded-lg">
+
+                <!-- Audio controls -->
+                <audio id="audio-preview" controls></audio>
+
+                <!-- progress bar -->
+                <!-- <div class="bg-blue-500 h-2 rounded-lg shadow-md">
+                    <div class="bg-white h-2 rounded-lg" style="width: 50%;"></div>
+                </div> -->
+
+                <!-- download btn -->
+                <div class="flex justify-between mt-4">
+                    <a class="bg-blue-500 text-white px-4 py-2 rounded-lg shadow-md disabled" href="#" id="download-button">Download</a>
+                </div>
+            </div>
+        </section>
+
+    </div> <!-- End container -->
+
+    <!-- Add your JavaScript/jQuery references here -->
+</body>
+</html>
