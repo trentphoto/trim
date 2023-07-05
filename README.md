@@ -4,7 +4,7 @@ A web app for trimming MP3 files.
 ## Project Goal
 This was a learning project for me to get familiar with Flask and FFmpeg.
 
-I intend to publish this app using Docker and AWS Elastic Beanstalk.
+Right now, it only runs locally. I intend to publish this app using Docker and AWS Elastic Beanstalk.
 
 This was a fun project to create and I learned a lot. I hope you find it useful.
 
