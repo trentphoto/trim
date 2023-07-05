@@ -16,7 +16,6 @@ instance/
 
 # Docker
 Dockerfile
-requirements.txt
 
 # system files
 .DS_Store
