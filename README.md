@@ -8,6 +8,12 @@ Right now, it only runs locally. I intend to publish this app using Docker and A
 
 This was a fun project to create and I learned a lot. I hope you find it useful.
 
+## Tech Stack
+- Python
+- Flask
+- FFmpeg
+- TailwindCSS
+
 ## About Me
 I'm a full-stack software developer with a passion for designing clean, beautiful interfaces and writing efficient, maintainable code.
 
